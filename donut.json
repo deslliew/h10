@@ -113,7 +113,7 @@
         "type": "text",
         "align": "left",
         "x": 500,
-        "y": 310,
+        "y": 320,
         "fill": "black",
         "fontSize": 14,
         "text": "emission rate among the"
@@ -124,7 +124,7 @@
         "type": "text",
         "align": "left",
         "x": 500,
-        "y": 320,
+        "y": 340,
         "fill": "black",
         "fontSize": 14,
         "text": "other material categories."
