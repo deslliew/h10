@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> div {text-align: center;} </style>
+
+  <title>Understanding The Fossil CO2 Emission in Asia (2017 - 2021)</title>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+
+
+</head>
+<body>
+<style> div {text-align: center;} </style>
+<style>
+    ul {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
+</style>
+
+ <div class="page">
+
+   <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1 style = "background-color: #6297d3; padding: 50px; border: 2px solid black;"> Insights of Carbon Dioxide (CO2) Emissions in Asia<br>(2017 - 2021)</h1>
+      </div>
+    </div>
+  <!-- end pure grid group -->
+
+
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+            <h2 style = "background-color: #afe5fd; padding: 10px; border: 2px solid black;"> Choropleth Map Showing the CO2 Emission Rates in Asia</h2>
+            <p>This choropleth map visualizes the severity of the CO2 Emissions in Asia from 2017 to 2021. 
+                <b>The severity of the CO2 Emission rates are shown using the <font color="blue">blue </font> colour luminance.</b> <b>The darker the shade 
+                of <font color="blue">blue </font>, the higher the CO2 Emission rate in the particular country, and vice versa.</b> 
+                From the choropleth map, we know that <b>UAE, Saudi Arabia, Mongolia and Korea are the top 5 countries
+                with the highest CO2 Emission rates in Asia from 2017 to 2021</b>.
+            </p>
+        </div>
+        <div class="pure-u-1-1">
+          <div id="vis1" class="vis-container"></div>
+        </div>
+    </div>
+    <!-- end pure grid group -->
+  
+    <br><br>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-1-3">
+            <h2 style="background-color: #afe5fd; padding: 10px; border: 2px solid black;">Donut Chart Showing the Percentage Distribution of the CO2 Emission Rates in Asia, Based on Materials</h2>
+            <p>There are 5 materials, that are not part of these materials are classified as "Others": <br>
+            <div class="two-column-list">
+                <ul>
+                        <li><b><font color="#bc4b51">Coal</font></b></li>
+                        <li><b><font color="#5b8e7d">Oil</font></b></li>
+                        <li><b><font color="#ff6961">Gas</font></b></li>
+                        <li><b><font color="#C3B1E1">Cement</font></b></li>
+                        <li><b><font color="#f4e285">Flaring</font></b></li>
+                        <li><b><font color="#9ed0e1">Others</font></b></li>
+                </ul>
+            </div>
+            <br>Looking at the donut chart, we know that the <b><font color="#bc4b51">Coal</font> has the highest CO2 Emission rate</b>
+             among the 6 materials categories. On the other hand, <font color="#f4e285">Flaring</font> has the lowest CO2 Emission
+            rate</b> among the 6 materials categories. This pattern persisted throughout the 5 years, from 2017 to 2021.
+            </p>
+        </div>
+        <div class="pure-u-2-3">
+            <div id="vis3" class="vis-container" style="padding-right: 20px; padding-top: 0px"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- end pure grid group -->
+
+  </div> <!-- end page -->
+   
+<script type="text/javascript">
+  var specVis1 = "./CO2 emission (choropleth).json";
+  var specVis3 = "./donut.json";
+
+vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+</script>
+</body>
+</html>
