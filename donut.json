@@ -60,7 +60,7 @@
         "x": 20,
         "y": 40,
         "fill": "black",
-        "fontSize": 11,
+        "fontSize": 15,
         "text": "Coal has the highest CO2"
       }
     },
@@ -71,7 +71,7 @@
         "x": 20,
         "y": 50,
         "fill": "black",
-        "fontSize": 11,
+        "fontSize": 15,
         "text": "emission rate among the"
       }
     },
@@ -82,7 +82,7 @@
         "x": 20,
         "y": 60,
         "fill": "black",
-        "fontSize": 11,
+        "fontSize": 15,
         "text": "other material"
       }
     },
@@ -93,7 +93,7 @@
         "x": 20,
         "y": 70,
         "fill": "black",
-        "fontSize": 11,
+        "fontSize": 15,
         "text": "categories."
       }
     },
@@ -101,10 +101,10 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "x": 450,
+        "x": 500,
         "y": 300,
         "fill": "black",
-        "fontSize": 11,
+        "fontSize": 15,
         "text": "Flaring has the lowest CO2"
       }
     },
@@ -112,10 +112,10 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "x": 450,
+        "x": 500,
         "y": 310,
         "fill": "black",
-        "fontSize": 11,
+        "fontSize": 15,
         "text": "emission rate among the"
       }
     },
@@ -123,10 +123,10 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "x": 450,
+        "x": 500,
         "y": 320,
         "fill": "black",
-        "fontSize": 11,
+        "fontSize": 15,
         "text": "other material categories."
       }
     },
