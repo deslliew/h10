@@ -99,39 +99,6 @@
     },
     {
       "mark": {
-        "type": "text",
-        "align": "left",
-        "x": 500,
-        "y": 300,
-        "fill": "black",
-        "fontSize": 14,
-        "text": "Flaring has the lowest CO2"
-      }
-    },
-    {
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "x": 500,
-        "y": 320,
-        "fill": "black",
-        "fontSize": 14,
-        "text": "emission rate among the"
-      }
-    },
-    {
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "x": 500,
-        "y": 340,
-        "fill": "black",
-        "fontSize": 14,
-        "text": "other material categories."
-      }
-    },
-    {
-      "mark": {
         "type": "arc",
         "innerRadius": 160,
         "outerRadius": 110,
